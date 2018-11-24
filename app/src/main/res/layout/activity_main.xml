@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timer"
+        android:text="00:00:00"
+        android:onClick="setTimer"
+        android:textAlignment="center"
+        android:textSize="52dp" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:background="@color/persik"
+        android:id="@+id/start"
+        android:onClick="startTime"
+        android:text="@string/button_start" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <RadioButton
+            android:textSize="32sp"
+            android:id="@+id/timer_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Таймер" />
+        <RadioButton
+            android:textSize="32sp"
+            android:id="@+id/second_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Секундомер"/>
+        <RadioButton
+            android:textSize="32sp"
+            android:id="@+id/clock_mode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Часы"/>
+    </RadioGroup>
+
+</LinearLayout>

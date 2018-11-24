@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Таймер</string>
+    <string name="button_start">СТАРТ</string>
+</resources>
